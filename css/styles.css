@@ -74,8 +74,8 @@ h1 {
 .nav-contacts {
   display: flex;
 }
-.header-contact-item:not(:last-child) {
-  margin-right: 50px;
+.header-icon {
+  margin-right: 10px;
 }
 
 .header-contact-item {
@@ -225,7 +225,8 @@ body {
 }
 
 .navbar-link:hover,
-.contacts:hover {
+.contacts:hover,
+.header-icon {
   color: var(--focus-hover-color-text);
 }
 
