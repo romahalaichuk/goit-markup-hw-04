@@ -55,6 +55,7 @@ h1 {
 /* hero hover button color   #188CE8  */
 
 :root {
+  --icon-color: #afb1bb;
   --main-color: #212121;
   --sub-text-color: rgba(255, 255, 255, 0.6);
   --sub-font-size: 16px;
@@ -268,6 +269,7 @@ body {
 .filter-button:hover {
   color: var(--focus-hover-color-button);
 }
+
 .nav-g:hover,
 .address-g:hover {
   color: var(--active-color);
@@ -353,6 +355,7 @@ body {
 .section-no-top-padding {
   padding-top: 0;
 }
+
 .we-do-container {
   display: flex;
   flex-direction: column;
@@ -360,12 +363,81 @@ body {
 .we-do-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+.footer-icon-box {
+  margin-left: 70px;
+}
+.footer-socials-item {
+  display: flex;
+}
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--active-color);
+}
+.footer-socials-icon {
+  fill: currentColor;
+}
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-background-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  margin-top: 15px;
+}
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.clients-link:focus,
+.clients-link:hover {
+  border: 1px solid var(--active-color);
+  color: var(--active-color);
+}
 .section-heading {
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.clients-icon {
+  fill: currentColor;
 }
 .section-heading-team {
   display: flex;
@@ -378,7 +450,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.heads-clients {
+  margin-bottom: 50px;
+}
 .section-team {
   background-color: var(--team-backgraund);
 }
