@@ -127,12 +127,13 @@ h1 {
   align-items: center;
 }
 .header-icons {
+  fill: currentColor;
   margin-right: 10px;
 }
-.header-icons:hover use {
+.header-icon-link:hover use {
   fill: var(--active-color);
 }
-.header-icons:focus use {
+.header-icon-link:focus use {
   fill: var(--active-color);
 }
 .header-contact-item-o {
@@ -235,8 +236,7 @@ body {
 }
 
 .navbar-link:hover,
-.contacts:hover,
-.header-icon {
+.contacts:hover {
   color: var(--focus-hover-color-text);
 }
 
@@ -276,7 +276,6 @@ body {
 .address-g:focus {
   color: var(--active-color);
 }
-background-image: url(/images/fons.jpg);
 .contacts {
   color: var(--sub-text-color);
   font-size: 14px;
@@ -286,6 +285,12 @@ background-image: url(/images/fons.jpg);
 }
 .atut {
   margin-bottom: 30px;
+}
+.header-icon-link {
+  display: flex;
+  align-items: center;
+  color: var(--adress-g);
+  cursor: pointer;
 }
 .hero {
   background-image: linear-gradient(
