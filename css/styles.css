@@ -382,7 +382,9 @@ body {
   color: var(--icon-color);
 }
 .footer-icon-box {
+  display: inline-block;
   margin-left: 70px;
+  padding: 0, 0;
 }
 .footer-socials-item {
   display: flex;
@@ -396,6 +398,9 @@ body {
 }
 .footer-socials-icon {
   fill: currentColor;
+}
+.clients-link:hover .clients-link use {
+  fill: var(--active-color);
 }
 .footer-socials-link {
   display: flex;
@@ -436,8 +441,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.clients-icon {
-  fill: currentColor;
+.clients-icon:hover {
+  color: var(--active-color);
 }
 .section-heading-team {
   display: flex;
@@ -507,11 +512,13 @@ body {
 }
 
 .footer {
+  display: flex;
   background-color: var(--mu-hero);
   padding: 60px 0;
 }
 
 .address {
+  display: flex;
   color: var(--sub-text-color);
   font-weight: 400;
   font-size: 14px;
