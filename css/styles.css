@@ -100,7 +100,6 @@ h1 {
   width: 270px;
 }
 .address-g {
-  color: var(--adress-g);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -179,10 +178,8 @@ body {
 }
 
 .logo {
-  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 26px;
-  font-weight: 700;
   color: var(--active-color);
   line-height: 1.19;
   letter-spacing: 0.02em;
@@ -310,11 +307,12 @@ body {
     url(/images/fons.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+
   max-width: 1600px;
   padding: 200px 0;
   background-color: var(--mu-hero);
   background-size: auto;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -429,10 +427,10 @@ body {
   color: var(--icon-color);
 }
 .footer-icon-box {
-  display: inline-block;
   margin-left: 70px;
-  margin-bottom: 1px;
+  display: inline-block;
 }
+
 .footer-socials-item {
   display: flex;
 }
