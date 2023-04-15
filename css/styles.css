@@ -361,15 +361,11 @@ body {
   cursor: pointer;
 }
 .hero {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(/images/fons.jpg);
+  background-image: url(/images/fons.jpg),
+    linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
   background-repeat: no-repeat;
   background-position: center;
-
-  max-width: 1600px;
   padding: 200px 0;
   background-color: var(--mu-hero);
   background-size: auto;
