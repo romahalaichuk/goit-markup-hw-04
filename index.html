@@ -79,7 +79,9 @@
             DLA WASZEGO BIZNESU
           </h1>
 
-          <button class="hero-button" type="button">Zamów usługę</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
 
@@ -149,7 +151,7 @@
                 width="370"
                 height="294"
               />
-              <!--<p class="we-do-label">Aplikacje komputerowe</p>-->
+              <p class="we-do-labels">Aplikacje komputerowe</p>
             </li>
             <li class="we-do-item">
               <img
@@ -158,7 +160,7 @@
                 width="370"
                 height="294"
               />
-              <!--<p class="we-do-label">Aplikacje mobilne</p>-->
+              <p class="we-do-labels">Aplikacje mobilne</p>
             </li>
             <li class="we-do-item">
               <img
@@ -167,7 +169,7 @@
                 width="370"
                 height="294"
               />
-              <!--<p class="we-do-label">Rozwiązania graficzne</p>-->
+              <p class="we-do-labels">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -473,5 +475,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hiden" data-modal>
+      <div class="modal-content">
+        <button type="button" class="form-close button" data-modal-close="">
+          <svg class="close" width="12" height="10">
+            <use href="./images/icons.svg#icon-Vector-10"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
